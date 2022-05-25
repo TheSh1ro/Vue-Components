@@ -1,3 +1,6 @@
+* {list-style: none;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -20,11 +23,20 @@ body {
 
 #header {
   grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header > ul {
+  display: flex;
+  padding: 5px;
+
 }
 #content {
   grid-area: content;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #footer {
   grid-area: footer;
